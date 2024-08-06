@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <div class="card-cal">
+            <label class="lable-cal">เครื่องคิดเลข</label>
+            <input type="text" name="" id="display" class="display" disabled>
+            <div class="button-clear" onclick="clearDisplay()"><i class="fa fa-trash-o"></i><pre>  </pre> ล้างข้อมูล</div>
+    
+            <table class="table-cal">
+                <tbody>
+                    <tr>
+                        <td><div class="button-cal" onclick="appendNumber('7')">7</div></td>
+                        <td><div class="button-cal" onclick="appendNumber('8')">8</div></td>
+                        <td><div class="button-cal" onclick="appendNumber('9')">9</div></td>
+                        <td><div class="button-cal" onclick="chooseOperator('÷')">÷</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="button-cal" onclick="appendNumber('4')">4</div></td>
+                        <td><div class="button-cal" onclick="appendNumber('5')">5</div></td>
+                        <td><div class="button-cal" onclick="appendNumber('6')">6</div></td>
+                        <td><div class="button-cal" onclick="chooseOperator('x')">x</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="button-cal" onclick="appendNumber('1')">1</div></td>
+                        <td><div class="button-cal" onclick="appendNumber('2')">2</div></td>
+                        <td><div class="button-cal" onclick="appendNumber('3')">3</div></td>
+                        <td><div class="button-cal" onclick="chooseOperator('-')">-</div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="button-cal" onclick="appendNumber('0')">0</div></td>
+                        <td><div class="button-cal" onclick="appendNumber('.')">.</div></td>
+                        <td><div class="button-cal" onclick="calculate()">=</div></td>
+                        <td><div class="button-cal" onclick="chooseOperator('+')">+</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    
+</body>
+
+<script src="app.js"></script>
+
+</html>
